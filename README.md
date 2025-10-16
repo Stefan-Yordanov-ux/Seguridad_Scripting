@@ -5,6 +5,9 @@
 **Requisitos, instalación y uso.**:
 
 
+
+
+
 **Ejemplos de ejecución (comandos/capturas):**
 
 1: **Ejecutamos el script menu ./script_menu.
