@@ -16,8 +16,8 @@ Nos deberia aparecer algo como esto.**
 
 4: **Si elegimos La opcion 3 (escribiendo 3) necesitaremos crear un archivo dentro del directorio para que podamos cifrarlo de forma simetrica con la clave aleatoria.**
 
-5: **Si elegimos la opcion 4 (escribiendo 4) una vez hemos encriptado el fichero con la opcion 3 , al darle clic nos pedira el nombre del fichero que en este caso es el test.enc para descifrarlo
-  Se nos queda el archivo que habiamos cifrado previamente mas su opuesto que es el fichero descifrado.**
+5: **Si elegimos la opcion 4 (escribiendo 4) una vez hemos encriptado el fichero con la opcion 3 , al darle clic nos pedira el nombre del fichero que en este caso es el test.enc , para descifrarlo
+  se nos queda el archivo que habiamos cifrado previamente mas su opuesto que es el fichero descifrado.**
 
 6: **Si elegimos la opcion 5 (escribiendo 5) generamos otro fichero para cifrar de forma asimetrica , lo que hara es cifrar con la clave publica tanto los datos del fichero como la clave AES y nos generara dos ficheros
 un fichero test2.enc (Ejemplo) y test2.key.enc (Ejemplo)**
