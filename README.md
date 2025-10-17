@@ -28,37 +28,65 @@ Nota: Los pasos de uso a seguir los he explicado en el apartado ''Ejemplos de ej
 
 1: Ejecutamos el script menu ./script_menu.
 Nos deberia aparecer algo como esto.
-![Mostrar Menu](imagenes_explicaciones_capturas/abrir_menu.png)
+![Abrir Menu](imagenes_explicaciones_capturas/abrir_menu.png)
 ![Mostrar Menu](imagenes_explicaciones_capturas/muestra_menu.png)
 
 
-2: Si elegimos la opcion 1 (escribiendo 1) nos va generar las claves publica y privada en un directorio llamado /claves que se va crear al ejecutar dicha opcion
+2: Si elegimos la opcion 1 (escribiendo 1) nos va generar las claves publica y privada en un directorio llamado /claves que se va crear al ejecutar dicha opcion.
 
-3: Si elegimos la opcion 2 (escribiendo 2) nos va generar una clave aleatoria que se guardara en el directorio /claves
+![Generar Claves Publica Y Privada](imagenes_explicaciones_capturas/opcion1_menu.png)
+
+3: Si elegimos la opcion 2 (escribiendo 2) nos va generar una clave aleatoria que se guardara en el directorio /claves.
+
+![Clave Aleatoria](imagenes_explicaciones_capturas/opcion2_menu.png)
+
 
 4: Si elegimos La opcion 3 (escribiendo 3) necesitaremos crear un archivo dentro del directorio para que podamos cifrarlo de forma simetrica con la clave aleatoria.
+![Crear Fichero](imagenes_explicaciones_capturas/generar_fichero_opcion3.png)
+![Cifrar Simetricamente](imagenes_explicaciones_capturas/opcion3_menu.png)
 
 5: Si elegimos la opcion 4 (escribiendo 4) una vez hemos encriptado el fichero con la opcion 3 , al darle clic nos pedira el nombre del fichero que en este caso es el test.enc , para descifrarlo
   se nos queda el archivo que habiamos cifrado previamente mas su opuesto que es el fichero descifrado.
 
+![Descifrar Simetricamente](imagenes_explicaciones_capturas/opcion4_menu.png)
+
 6: Si elegimos la opcion 5 (escribiendo 5) generamos otro fichero para cifrar de forma asimetrica , lo que hara es cifrar con la clave publica tanto los datos del fichero como la clave AES y nos generara dos ficheros
-un fichero test2.enc (Ejemplo) y test2.key.enc (Ejemplo)
+un fichero test2.enc (Ejemplo) y test2.key.enc (Ejemplo).
+
+![Cifrar Asimetricamente](imagenes_explicaciones_capturas/opcion5_menu.png)
+![Mostrar Ficheros](imagenes_explicaciones_capturas/archivos_generados_opcion5.png)
+
 
 7: Si elegimos la opcion 6 (escribiendo 6) vamos a descifrar con la clave privada , nos pedira el nombre del fichero a descifrar sin la extension enc y primero descifrara la clave AES y la renviara a un tmp/claves_aes.key ,
-despues el archivo se descifrara en descifrado_asimetrico y se lo pasaremos al tmp/claves_aes.key y por ultimo borrara es directorio temporal tmp/claves_aes.key
+despues el archivo se descifrara en descifrado_asimetrico y se lo pasaremos al tmp/claves_aes.key y por ultimo borrara ese directorio temporal tmp/claves_aes.key.
 
-8: Si elegimos la opcion 7 (escribiendo 7) vamos a visualizar nuestra clave publica
+![Descifrar Asimetricamente](imagenes_explicaciones_capturas/opcion6_menu.png)
+![Mensaje Descifrado](imagenes_explicaciones_capturas/muestra_mensaje_descifrado.png)
+
+
+8: Si elegimos la opcion 7 (escribiendo 7) vamos a visualizar nuestra clave publica.
+
+![Ver Publica](imagenes_explicaciones_capturas/opcion7_menu.png)
 
 9: Si elegimos la opcion 8 (escribiendo 8) vamos a importar nuestra clave publica a otro directorio , nos pedira primero la ruta donde esta nuestra clave publica que como el directorio esta a nivel del script,
-pues escribiremos claves/clave_publica.pem. Se generara un directorio keyring con nuestra clave publica ahi
+pues escribiremos claves/clave_publica.pem. Se generara un directorio keyring con nuestra clave publica ahi.
+
+![Importar Clave Publica](imagenes_explicaciones_capturas/opcion8_menu.png)
 
 10: Si elegimos la opcion 9 (escribiendo 9) vamos a exportar nuestra clave publica a un directorio que le digamos , no hace falta que exista porque lo creara el script , la ruta de la clave publica seria claves/clave_publica.pem y
-finalmente el nombre del directorio o ruta donde lo queremos exportar.
+finalmente el nombre del directorio o ruta donde lo queremos exportar ejemplo export_clave.
+
+![Exportar Clave Publica](imagenes_explicaciones_capturas/opcion9_menu.png)
+![Prueba Exportar Clave Publica](imagenes_explicaciones_capturas/muestra_export.png)
+
 
 11: Si elegimos la opcion 10 (escribiendo 10) vamos a visualizar en que directorio estan las claves, es decir , vamos a filtrar por patrones .pub , .publica.pem , .pem etc... , nos pedira en que directorio buscar esas claves o patrones ,
-he usado el directorio claves(ejemplo) para mostrarlo
+he usado el directorio claves(ejemplo) para mostrarlo.
 
-12: Si elegimos la opcion 11(escribiendo 11) salimos del menu
+![Buscar claves por acotado o patrones](imagenes_explicaciones_capturas/muestra_export.png)
+
+
+12: Si elegimos la opcion 11(escribiendo 11) salimos del menu.
 
 **Breve explicación del cifrado híbrido.**:
 
