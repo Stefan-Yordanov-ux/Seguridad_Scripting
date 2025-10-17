@@ -4,9 +4,25 @@
 
 **Requisitos, instalación y uso.**:
 
-Pendiente....
+Requisitos:  
+             1: Tener tanto Windows de tu maquina fisica como la virtual de Ubuntu Server Instalados SSH.
+             
+             2: Descargar el zip desde github y meterlo en una carpeta creada por ti en C: por ejemplo C:\Carpeta_subir_zip.
+            
+Instalacion:  
+             3: En Windows abrimos un Powershell como administradores y escribimos el siguiente comando 
+             scp 'C:\Nombre_Carpeta_Donde_Esta_El_Zip\El_archivo_zip' nombre_usuario_maquina_virtual@ip_maquina_virtual:ruta_a_subir_zip ejemplo /home/stefan.
+             
+             4: Entramos en nuestra maquina virtual dentro del repositorio donde esta el zip y hacemos uso del comando unzip nombre_fichero_zip -d (directorio al que iran los ficheros una vez descomprimamos) 
+             directorio_probar_app como ejemplo. 
+             
+             Nota: Si no esta el comando zip disponible sudo apt install zip.
 
+             5: Entramos dentro del directorio que se nos genero en el paso 4 y tendremos los scripts que componen la aplicacion pero sin la x de ejecutar , entonces habra que hacerse chmod +x a todos los script.
 
+             6: Una vez eso este hecho , ya se podria probar la app con los diferentes scripts.
+
+             Nota: Los pasos de uso a seguir los he explicado en el apartado ''Ejemplos de ejecucion (comandos/ejecucion)''.
 
 **Ejemplos de ejecución (comandos/capturas):**
 
